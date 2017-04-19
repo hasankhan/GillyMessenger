@@ -1,0 +1,10 @@
+Set $Nick=$Null
+Set $Song=(Song)
+If $Song<>$Null
+    If $Song<>$Nick
+        Set $Nick=$Song
+        ChangeNick $Nick
+    End If
+End If
+Sleep 1000
+Goto 2

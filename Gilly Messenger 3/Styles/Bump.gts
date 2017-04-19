@@ -1,0 +1,13 @@
+a=A
+c=C
+e=E
+g=G
+i=I
+k=K
+m=M
+o=O
+q=Q
+s=S
+u=U
+w=W
+y=Y

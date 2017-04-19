@@ -1,0 +1,13 @@
+hello=hi (buddycustomnick)
+hello *=hi (buddycustomnick)
+hi=hello (buddycustomnick)
+hi *=hello (buddycustomnick)
+hey=hi
+hiya=hey
+hiya *=hey
+how are ??u*=I'm fine. How are you?
+W?a?[sz]?up*=Nothing much. You tell
+take care=you too
+bye*=bubye
+ciao=adios
+bubye*=bye

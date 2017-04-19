@@ -1,0 +1,294 @@
+<html>
+<head>
+<title>Gilly Messenger</title>
+<style type="text/css">
+a {text-decoration:none}
+</style>
+</head>
+<body bgcolor=black text=white link=white alink=white vlink=white hlink=white>
+<font face='Verdana'>
+<center><h3>Gilly Messenger 2.9 Readme</h3></center><p>
+</font>
+<font face='Verdana' size=2>
+<b>Index :-</b><br>
+<ol>
+	<li><a href=#intro>Introduction</a></li>
+	<li><a href=#whatis>What Gilly Messenger does?</a></li>
+	<li><a href=#chatwnd>Chat window commands</a></li>
+	<li><a href=#aliases>Message Aliases</a></li>
+	<li><a href=#gmse>GM Scripting Engine</a></li>
+	<li><a href=#gmrc>GM Remote Control</a></li>
+	<li><a href=#about>About the Developer</a></li>
+	<li><a href=#thanks>Special Thanks</a></li><p>
+</ol>
+<ol>
+	<li>
+	<a name=intro>
+	<b>Introduction :-</b><br>
+	Gilly Messenger is a MSN Messenger client programmed in Visual Basic.<br>
+	It signs you in to MSN server and lets you do the tricks ;)
+	</a>
+	</li>
+	<p>
+	<li>
+	<a name=whatis>
+	<b>What Gilly Messenger does?</b><br>
+		<ol>
+		<li>Multiline nick names</li>
+		<li>Talk to people while they're blocked.</li>
+		<li>Talk to people while you're appearing offline (You need to appear online once).</li>
+		<li>Talk to people while you're signed out.</li>
+		<li>Open multi sessions of Gilly Messenger.</li>
+		<li>Search your contact list.</li>
+		<li>Chat Logger</li>
+		<li>Text Styler (Write messages in different styles).</li>
+		<li>Auto message</li>
+		<li>GM Scripting Engine (You can create scripts for GM using its own scripting language).</li>
+		<li>Message can be as long as 1536 characters.</li>
+		<li>No invite limit (You can invite as many people in your chat as you like).</li>
+		<li>Commands in chat window i.e CLS, Invite</li>
+		<li>New IDLE state (The person who doesn't touch messenger for 5 mins shows up as Idle)</li>
+		<li>New IGNORE option</li>
+		<li>Easy to change nick and status.</li>
+		<li>Block alert</li>
+		<li>Delete alert</li>
+		<li>Stealth sign in (You're appeared offline by default. Block the unwanted people and then go online ;)</li>
+		<li>Remote Control (You can operate your Messenger/PC from anywhere in the world).</li>
+		<li>Store comments for each contact.</li>
+		<li>Status Logger</li>
+		</ol>
+	</a>
+	</li>
+	<p>
+	<li>
+	<a name=chatwnd>
+	<b>Chat window commands :-</b><br>
+		You can type the following commands for quick actions :-<br><br>
+		<ol>
+		<li>CLS<br>
+		Clears the text of your chat window.<br>&nbsp</li>
+		<li>/Reconnect<br>
+		Reconnects to primary conversation buddy if he/she closes the window.<br>&nbsp</li>
+		<li>/Vanish<br>
+		Hides the conversation window till a message is received.<br>&nbsp</li>
+		<li>/Profile<br>
+		Opens the profile of the primary chat window buddy.<br>&nbsp</li>
+		<li>/Mask<br>
+		Masks messages that you type.<br>&nbsp</li>
+		<li>/Block<br>
+		Blocks/Unblocks the primary conversation buddy.<br>&nbsp</li>
+		<li>/Ignore<br>
+		Ignores/Unignores the primary conversation buddy.<br>&nbsp</li>
+		<li>/Invite EmailAddress<br>
+		Invites a person to the conversation.<br>&nbsp</li>
+		<li>/ChatLogger<br>
+		Starts/Stops the Chat Logger.<br>&nbsp</li>
+		<li>/List<br>
+		Displays the buddies in current conversation.<br>&nbsp</li>
+		<li>/List Online<br>
+		Displays the buddies currently online.<br>&nbsp</li>
+		<li>/Find Text<br>
+		Searches the chat box for specified text.<br>&nbsp</li>
+		<li>/Nick NewNick<br>
+		Changes your nick name<br>&nbsp</li>
+		<li>/Away Message<br>
+		Sets your status to away with an auto message.<br>&nbsp</li>
+		<li>/Online<br>
+		Sets your status to Online<br>&nbsp</li>
+		<li>/Busy<br>
+		Sets your status to Busy<br>&nbsp</li>
+		<li>/Brb<br>
+		Sets your status to Be Right Back<br>&nbsp</li>
+		<li>/Away<br>
+		Sets your status to Away<br>&nbsp</li>
+		<li>/Phone<br>
+		Sets your status to On The Phone<br>&nbsp</li>
+		<li>/Lunch<br>
+		Sets your status to Out To Lunch<br>&nbsp</li>
+		<li>/Idle<br>
+		Sets your status to Idle<br>&nbsp</li>
+		<li>/Hide<br>
+		Sets your status to Appear Offline<br>&nbsp</li>
+		<li>/Automessage Message<br>
+		Turns the automessage ON/OFF<br>&nbsp</li>
+		<li>/Color HexCode<br>
+		Changes the color of your message to specified color value in hex code.<br>&nbsp</li>
+		<li>/Bold<br>
+		Changes the font style to bold.<br>&nbsp</li>
+		<li>/Italic<br>
+		Changes the font style to italic.<br>&nbsp</li>
+		<li>/Chat Email<br>
+		Starts a conversation with the person of that email.<br>&nbsp</li>
+		<li>/Msg Email Message<br>
+		Sends the message to contact with that email.<br>&nbsp</li>
+		<li>/MsgAll Message<br>
+		Sends message to all opened chat windows.<br>&nbsp</li>
+		<li>/View Log<br>
+		Opens the chat log of the primary conversation buddy.<br>&nbsp</li>
+		<li>/Signout<br>
+		Signs you out.<br>&nbsp</li>
+		<li>/Sigin Username Password<br>
+		Signs you in to the server with the specified username and password.<br>&nbsp</li>
+		<li>/Msgr<br>
+		Sets focus to the GM.<br>&nbsp</li>
+		<li>/Exit<br>
+		Exits Gilly Messenger<br>&nbsp</li>
+		</ol>
+	</a>
+	</li>
+	<p>
+	<li>
+	<a name=aliases>
+	<b>Message Aliases</b><br>
+	You can use following aliases :-<br><br>
+		<ol>
+		<li>(Time)<br>
+		Puts the current time.<br>&nbsp</li>
+		<li>(Date)<br>
+		Puts the current date.<br>&nbsp</li>
+		<li>(Now)<br>
+		Puts the current date and time.<br>&nbsp</li>
+		<li>(Day)<br>
+		Puts the current day.<br>&nbsp</li>
+		<li>(Nick)<br>
+		Puts your nick name.<br>&nbsp</li>
+		<li>(IP)<br>
+		Puts your IP address.<br>&nbsp</li>
+		<li>(Song)<br>
+		Puts the currently playing song in Winamp.<br>&nbsp</li>
+		<li>(CrLf)<br>
+		Puts the carriage return and line feed.<br>&nbsp</li>
+		<li>(Ver)<br>
+		Puts the version number of GM.<br>&nbsp</li>
+		</ol>
+	</a>
+	</li>
+	</p>
+	<li>
+	<a name=gmse>
+	<b>GM Scripting Engine :-</b><br>
+	This engine lets you execute a series of commands saved in a file.<br>
+	Sample scripts are provided with the software.<br>
+	Following are the commands with parameter types:-<br>
+	<br>
+		<ol>
+		<li>REN NewNickName<br>
+		Changes your nick name.<br>&nbsp</li>
+		<li>GTO LineNumber<br>
+		Jumps you to the specific command in the script.<br>&nbsp</li>
+		<li>CST StatusIndex<br>
+		Changes your satus to Online, Offline, Busy, etc.<br>
+		Status Index is a integer with value from 0 to 7<br>&nbsp</li>
+		<li>SOT<br>
+		Signs you out of MSN server.<br>&nbsp</li>
+		<li>SIN Username Password<br>
+		Signs you into MSN server.<br>&nbsp</li>
+		<li>SLP Interval<br>
+		Delays the execution of the next statement in milli seconds.<br>&nbsp</li>
+		<li>AMG Message<br>
+		Sets the Auto Message.<br>&nbsp</li>
+		<li>MGA Message<br>
+		Sends message to all opened chat windows.<br>&nbsp</li>
+		<li>CLG<br>
+		Starts/Stops the Chat Logger.<br>&nbsp</li>
+		<li>BLK EmailAddress<br>
+		Blocks the person from seeing your online status.<br>&nbsp</li>
+		<li>UBK EmailAddress<br>
+		Unblocks the person.<br>&nbsp</li>
+		<li>MSG EmailAddress Message<br>
+		Sends the message to the user with that email address.<br>&nbsp</li>
+		<li>SND PathOfSoundFile<br>
+		Plays the specified sound file.<br>&nbsp</li>
+		<li>EXT<br>
+		Exits Gilly Messenger.<br>&nbsp</li>
+		<li>END<br>
+		Ends the Script.<br>&nbsp</li>
+		<li>VAR VariableName:Value<br>
+		Stores the value in a variable with that name.<br>&nbsp</li>
+		<li>IF EmailAddress IS [NOT] ONLINE/BLOCKED/IGNORED<br>
+		Executes the commands inside the IF block for a true statement.<br>
+		Block Must end with "end if" statement.<br>&nbsp</li>
+		If the parameter is (INP) then user is asked for the parameter of the command 
+		at run time.<br>
+		If the parameter is VAL:VariableName then the parameter is fetched from the variable 
+		with that name.<br>&nbsp</li>
+		</ol>
+	</a>
+	</li>
+	<p>
+	<li>
+	<a name=gmrc>
+	<b>GM Remote Control :-</b><br>
+	To use the Remote Control you must start the server at the target GM.<br>
+	To start the server, cick on Tools>Remote Control on the GM main window.<br>
+	Enter the username and password and press Start Server.<br>
+	When the server is started you need to identify yourself to it using that username and password.<br>
+	First you need to send a request to GM i.e 'GM Remote Control Request' (Case sensitive)<br>
+	The server will then ask you for the username and password.<br>
+	Type the username and press CTRL+ENTER to goto new line then type the password and send it.<br>
+	Once you are logged in, you are then ready to send commands to the server.<br>
+	Following DOS commands are compatible without switches :-<br><br>
+		<ol>
+		<li>DIR<br>
+		Shows the files and directories.<br>&nbsp</li>
+		<li>RD<br>
+		Removes a directory.<br>&nbsp</li>
+		<li>MD<br>
+		Creates a new directory.<br>&nbsp</li>
+		<li>COPY<br>
+		Copies a file from source to destination directory.<br>&nbsp</li>
+		<li>DEL<br>
+		Deletes a file.<br>&nbsp</li>
+		<li>REN<br>
+		Renames a file or directory.<br>&nbsp</li>
+		<li>Drive:<br>
+		Changes the drive.<br>&nbsp</li>
+		<li>CD<br>
+		Changes the directory.<br>&nbsp</li>
+		Other commands are :-<br><br>
+		<li>Msgr ChatWindowCommand<br>
+		Sends a chat window command to control the messenger.<br>&nbsp</li>
+		<li>List Online<br>
+		Sends the list of online buddies on that messenger.<br>&nbsp</li>
+		<li>Execute File/Internet Address Parameters<br>
+		Opens/Executes the file on the server with optional paramerters.<br>&nbsp</li>
+		<li>Dump File<br>
+		Starts putting your messages into a file. To end the file dump send a CrLf (CTRL+ENTER) and '.' in a single message.<br>&nbsp</li>
+		<li>Read File<br>
+		Reads the contents of a file.<br>&nbsp</li>
+		<li>Logout<br>
+		Logs you out of the server.<br>&nbsp</li>
+		<li>Reboot<br>
+		Reboots the server PC.<br>&nbsp</li>
+		<li>Shutdown<br>
+		Turns off the server PC.<br>&nbsp</li>
+		</ol>
+	</a>
+	</li>
+	<p>
+	<li>
+	<a name=about>
+	<b>About the Developer :-</b><br>
+		My name is M.Hasan Khan and Gilly is my nick name :) <br>
+		I was born on 17th July 1985.<br>
+		I am from Islamabad - Pakistan<br>
+	</a>
+	</li>
+	<p>
+	<li>
+	<a name=thanks>
+	<b>Special Thanks :-</b><br>
+		<ol>
+		<li>To my mom, for letting me work on it in peace and supporting me :)<br>
+		<li>To Future Connect, for letting me use their labs.<br>
+		<li>To Maverick and Millenium_Edition for the support.<p>
+		</ol>
+	</a>
+	</li>
+	</ol>
+	CrackSoft - 2003<br>
+	Email : <a href="mailto:info@cracksoft.net.pk">info@cracksoft.net.pk</a><br>
+	Website : <a href=http://www.cracksoft.net.pk>www.cracksoft.net.pk</a>
+</font>
+</body>
+</html>

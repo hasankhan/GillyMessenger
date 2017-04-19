@@ -1,0 +1,509 @@
+<html>
+<body link=black vlink=black alink=black>
+<title>Gilly Messenger 3</title>
+<center><font face=verdana><h3>Gilly Messenger 3</h3></font></center>
+<font face=verdana size=2>
+<strong>Index:-</strong>
+<ol>
+	<li><a href=#intro style=text-decoration:none>Introduction</a>
+	<li><a href=#imcmds style=text-decoration:none>IM Window commands</a>
+	<li><a href=#aliases style=text-decoration:none>Message Aliases</a>
+	<li><a href=#gmse style=text-decoration:none>GM Scripting Engine</a>
+	<li><a href=#gmrc style=text-decoration:none>GM Remote Control</a>
+	<li><a href=#thanks style=text-decoration:none>Special Thanks</a>
+</ol>
+<ol>
+	<li><a name=intro><strong>Introduction:-</strong><br>
+	Gilly Messenger is an alternate MSN client with different extra tools and options like:-<br>
+	<ul>
+		<li>Multiline nicknames.
+		<li>Talk to people while they're blocked.
+		<li>Keep talking to people even after appear offline.
+		<li>Keep talking to people even after signing out.
+		<li>Open multi instances of GM.
+		<li>Search your contact list.
+		<li>Chat logger.
+		<li>Status logger.
+		<li>Text Styler (Word/Character replacement tool).
+		<li>Auto Message.
+		<li>Chat Bot.
+		<li>Unlimited Message length.
+		<li>No invite limit.
+		<li>IM Window commands e.g cls, /block/ ignore e.t.c.
+		<li>New idle state (If GM is not used for 5 mins it will change your status to idle).
+		<li>New ignore option (Prevents people from sending you message).
+		<li>Easy to change nick and status.
+		<li>Block alert.
+		<li>Delete alert.
+		<li>Add alert.
+		<li>Choose status before signing-in.
+		<li>Store comments on contacts.
+		<li>Contact renaming (Custom Nick).
+		<li>Have a fake nick in conversation.
+		<li>Emoticon flood control.
+		<li>Message All option.
+		<li>MSN Messenger like interface.
+		<li>Get to know when someone opens your window.
+		<li>Get to know when someone closes yoru window.
+		<li>Contact statistics (last online time, last message time, last file transfer ip, e.t.c.).
+		<li>IM Encryption.
+		<li>Random IM Colors.
+		<li>Random IM Formatting.
+		<li>Contact list cleaner.
+		<li>Popup Filter.
+		<li>Sound Filter.
+		<li>Change file transfer port to bypass firewalls (Does not work from MSN to GM).
+		<li>Store password for multiple accounts.
+		<li>GM Display Pics (Only viewable to GM users).
+		<li>GM Remote Control (Control your PC using a command line interface through text messages).
+		<li>GM Scripting Engine (Code your Addons in extended scripting language of GM).
+	</ul>
+	<br>
+	<li><a name=imcmds><strong>IM Window commands:-</strong><br>
+	You can type these commands in IM Windows and press return key to achieve different tasks.<br>
+	Following are the IM Window commands with their description:-<br>
+	<font name=verdana size=1>Any argument in bracket shows its optional.</font>
+	<ul>
+		<li><i>CLS</i><br>
+		Clears IM Window text.
+		<li><i>/Vanish</i><br>
+		Makes the IM Window invisible and makes it visible when message is received.
+		<li><i>/Block [Email]</i><br>
+		Blocks the contact.
+		<li><i>/Unblock [Email]</i><br>
+		Unblock the contact.
+		<li><i>/Ignore [Email]</i><br>
+		Ignores the contact.
+		<li><i>/Unignore [Email]</i><br>
+		Unignores the contact.
+		<li><i>/Profile [Email]</i><br>
+		Shows the profile.
+		<li><i>/Properties [Email]</i><br>
+		Shows properties dialog of contact.
+		<li><i>/List</i><br>
+		Shows all the buddies in conversation.
+		<li><i>/List Online</i><br>
+		Shows all online contacts.
+		<li><i>/View Log [Email]</i><br>
+		Shows chat log with the primary conversation buddy.
+		<li><i>/View Comment [Email]</i><br>
+		Shows the comment on the contact.
+		<li><i>/Comment [Email] Comment</i><br>
+		Sets the comment for the contact.
+		<li><i>/CustomNick [Email] Nick</i><br>
+		Sets the customnick of the contact.
+		<li><i>/AddContact [Email]</i><br>
+		Adds the contact.
+		<li><i>/Find Text</i><br>
+		Finds the text in IM Window chat history.
+		<li><i>/Email [Email]</i><br>
+		Opens hotmail compose page to the specified email address.
+		<li><i>/Nick Nick</i><br>
+		Changes your nickname.
+		<li><i>/FakeNick [Nick]</i><br>
+		Toggles your nick inside the conversation.
+		<li><i>/Font [Bold] [Italic] [Strikethru] [Underline] [FontName]</i><br>
+		Changes your font to the specified format.
+		<li><i>/Color Hexcode</i><br>
+		Changes your color to the specified hexcode.
+		<li><i>/AutoMsg [Message]</i><br>
+		Toggles auto message.
+		<li><i>/Online</i><br>
+		Changes your status to online.
+		<li><i>/Busy</i><br>
+		Changes your status to busy.
+		<li><i>/BRB</i><br>
+		Changes your status to be right back.
+		<li><i>/Away [Message]</i><br>
+		Changes your status to away with optional auto message.
+		<li><i>/Phone</i><br>
+		Changes your status to on the phone.
+		<li><i>/Lunch</i><br>
+		Changes your status to out to lunch.
+		<li><i>/Idle</i><br>
+		Changes your status to idle.
+		<li><i>/Hide</i><br>
+		Changes your status to appear offline.
+		<li><i>/Chat Email</i><br>
+		Starts conversation with the specified email address.
+		<li><i>/Msg Email Message</i><br>
+		Sends an instant message to the specified email address.
+		<li><i>/MsgAll Message</i><br>
+		Sends the specified message to all active conversations.
+		<li><i>/SendFile PathOfFile</i><br>
+		Sends the specified file to the primary conversation buddy.
+		<li><i>/Signout</i><br>
+		Signs you out of the msn server.
+		<li><i>/Signin Login Password</i><br>
+		Signs you in the msn server.
+		<li><i>/Ver</i><br>
+		Shows you the version of GM you have.
+		<li><i>/Msgr</i><br>
+		Gives focus to main GM window.
+		<li><i>/Close</i><br>
+		Closes the IM window.
+		<li><i>/Script ScriptPath/Name, [Argument List]</i><br>
+		Loads the script by name in scripts directory or by complete path. Optional arguments can be passed; seperated by commas.<br>
+		Arguments passed to the script can be read from the $arg array (starting from 1) and total no. of arguments is saved in $args variable.
+		<li><i>/Bot BotPath/Name</i><br>
+		Loads the bot by name in bots directory or by complete path.
+		<li><i>/Execute FileName [Parameters]</i><br>
+		Opens the file, executable or internet short cut.
+		<li><i>/Buzz</i><br>
+		Shakes the IM window of your buddy like yahoo to get the attention.
+		<li><i>/Exit</i><br>
+		Terminates GM.
+	</ul>
+	<br>
+	<li><a name=aliases><strong>Message Aliases:-</strong><br>
+	Aliases are the words that are replaced by a certain value pre-defined in GM.<br>
+	You can use following aliases:-<br>
+	<ul>
+		<li><i>(Time)</i><br>
+		Is replaced with current time.
+		<li><i>(sTime)</i><br>
+		Is replaced with current time without seconds.
+		<li><i>(Date)</i><br>
+		Is replaced with current date.
+		<li><i>(Now)</i><br>
+		Is replaced with current date and time.
+		<li><i>(Day)</i><br>
+		Is replaced with current day.
+		<li><i>(Email)</i><br>
+		Is replaced with your email.
+		<li><i>(Nick)</i><br>
+		Is replaced with your nick.
+		<li><i>(Status)</i><br>
+		Is replaced with your status number.
+		<li><i>(MyIP)</i><br>
+		Is replaced with your IP address.
+		<li><i>(CrLf)</i><br>
+		Is replaced with carriage return and line feed.
+		<li><i>(Ver)</i><br>
+		Is replaced with GM version.
+		<li><i>(Song)</i><br>
+		Is replaced with currently playing song in winamp or real player.
+		<li><i>(FontName)</i><br>
+		Is replaced with your IM font name.
+		<li><i>(FontColor)</i><br>
+		Is replaced with your IM font color value.
+		<li><i>(FontBold)</i><br>
+		Is replaced with your IM font bold value.
+		<li><i>(FontItalic)</i><br>
+		Is replaced with your IM font italic value.
+		<li><i>(FontStrikethru)</i><br>
+		Is replaced with your IM font strikethru value.
+		<li><i>(FontUnderline)</i><br>
+		Is replaced with your IM font underline value.
+		<li><i>(Font)</i><br>
+		Is replaced with your complete font formatting.
+		<li><i>(BuddyCount)</i><br>
+		Is replaced with number of buddies in multi contact conversation.
+		<li><i>(BuddyEmail)</i><br>
+		Is replaced with the email of the primary conversation buddy.
+		<li><i>(BuddyNick)</i><br>
+		Is replaced with the nick of the primary conversation buddy.
+		<li><i>(BuddyComment)</i><br>
+		Is replaced with the comment on the primary conversation buddy.
+		<li><i>(BuddyCustomNick)</i><br>
+		Is replaced with the custom nick of the primary conversation buddy.
+		<li><i>(Buddy#Email)</i><br>
+		Is replaced with the email of the buddy specified by number(#) in multi contact conversation.
+		<li><i>(Buddy#Nick)</i><br>
+		Is replaced with the nick of the buddy specified by number(#) in multi contact conversation.
+		<li><i>(Buddy#Comment)</i><br>
+		Is replaced with the comment on the buddy specified by number(#) in multi contact conversation.
+		<li><i>(Buddy#CustomNick)</i><br>
+		Is replaced with the custom nick of the buddy specified by number(#) in multi contact conversation.
+	</ul>
+	<br>
+	<li><a name=gmse><strong>GM Scripting Engine:-</strong><br>
+	GM Scripting Engine enables you to execute commands on GM saved in a text file with 'gms' extension.<br>
+	Its commands, functions and events are explained as follows however you can go through the scripts given with the package to have a better understanding.
+	<ul>
+		<li>Commands, Statements, Functions<br>
+		<ul>
+			<li><i>ChangeNick Nick</i><br>
+			Changes your nickname.
+			<li><i>ChangeStatus Status</i><br>
+			Changes your status toe the number you specify between 0 to 7 (Inclusive).
+			<li><i>Signout</i><br>
+			Signs you out of msn server.
+			<li><i>SignIn Login Password</i><br>
+			Signs you in the msn server with the login and password you specify.
+			<li><i>Sleep MilliSeconds</i><br>
+			Delays the execution of the next statement in milliseconds.</i><br>
+			Note: This command does not function under events.
+			<li><i>Goto LineNumber/Label</i><br>
+			Moves the execution control to the line number or label you specify.<br>
+			To specify a label on certain line simply type the name of the lable inside square brackets before the line i.e [Lable1]<br>
+			Note: empty spaces and comments and event tags are not counted as lines.</i><br>
+			Inside events the line count is reset.
+			<li><i>Chat Email</i><br>
+			Starts conversation with the specified email address.
+			<li><i>Msg Email Message</i><br>
+			Sends an instant message to the specified email address.
+			<li><i>MsgEx Message</i><br>
+			Sends an instant message to the IMWindow which raises any IMWindow related GMS event.<br>
+			This command is recommended for use under such events for better performance and multiple contact conversation support.
+			<li><i>MsgAll Message</i><br>
+			Sends the message to all active conversations.
+			<li><i>Accept RequestID [Directory]</i><br>
+			Accepts the file transfer request.<br>
+			If target directory is not mentioned, the file is saved in default received files folder.
+			<li><i>Cancel RequestID</i><br>
+			Cancels the file transfer request.<br>
+			<li><i>MsgBox Message</i><br>
+			This can be used to show a message box to the user running the script.
+			<li><i>SendFile Email PathOfFile</i><br>
+			Sends the specified file to the contact with the specified email address.
+			<li><i>Ignore Email</i><br>
+			Ignores the contact with specified email address.
+			<li><i>Unignore Email</i><br>
+			Unignores the contact with specified email address.
+			<li><i>Block Email</i><br>
+			Blocks the contact with specified email address.
+			<li><i>Unblock Email</i><br>
+			Unblocks the contact with specified email address.
+			<li><i>AddContact [AL/FL/BL] Email</i><br>
+			Adds the contact to the specified list if mentioned otherwise added to forward and allow list together.
+			<li><i>DelContact [AL/FL/BL] Email</i><br>
+			Deletes the contact from the specified list if mentioned otherwise contact is deleted from forward list.
+			<li><i>Comment Email Comment</i><br>
+			Sets the comment on the contact with specified email address.
+			<li><i>CustomNick Email Nick</i><br>
+			Sets the custom nick of the the contact with specified email address.
+			<li><i>LoadScript PathOfScript, [Argument List]</i><br>
+			Loads another script from the specified path. Optional arguments can be passed; seperated by commas.<br>
+			Arguments passed to the script can be read from the $arg array (starting from 1) and total no. of arguments is saved in $args variable.
+			<li><i>Call SubName [Argument List]</i><br>
+			Calls a subroutine. Optional arguments can be passed; seperated by commas.<br>
+			Arguments passed to the routine can be read from the $arg array (starting from 1) and total no. of arguments is saved in $args variable.
+			<li><i>LoadBot PathOfBot</i><br>
+			Loads the bot from the specified path and unloads any other bot if loaded.</i><br>
+			Note: Only one bot can be loaded at a time.
+			<li><i>Execute File/Executable/URL [Parameters]</i><br>
+			Opens the file, executes the program or opens an internet shortcut.
+			<li><i>PlaySound PathOfSound</i><br>
+			Plays the wav/mp3 sound.
+			<li><i>End</i><br>
+			Ends and unloads the script.
+			<li><i>Exit</i><br>
+			Terminates GM.
+		</ul>
+		If parameter of any command is (INP) then user is prompted for the value of paramenter.
+		<li>Variables<br>
+		A variable is a word which carries a certain value thats replaced where ever it is used in the script.<br>
+		Its ideal to add '$' prefix to variable name e.g. $Temp.<br>
+		To assign a value to the variable you can use the 'Set' statement.<br>
+		Syntax of 'Set' statement is as follows:-<br>
+		<i>Set VariableName = Value</i><br>
+		There are different functions that can be used in place of variable value:-<br>
+		<ul>
+			<li><i>Mid Pos CharCount String</i><br>
+			Returns part of a string.
+			<li><i>Left Chars String</i><br>
+			Returns characters from left side of a string.
+			<li><i>Right Chars String</i><br>
+			Returns characters from right side of a string.
+			<li><i>Len String</i><br>
+			Returns the length of a string.
+			<li><i>Comment Email</i><br>
+			Returns the comment on the contact with specified email address.
+			<li><i>CustomNick Email</i><br>
+			Returns the custom nick of the contact with specified email address.
+			<li><i>Nick Email</i><br>
+			Returns the nick name of the person with specified email address.
+			<li><i>Status Email</i><br>
+			Returns the status number of the contact with specified email address.
+			<li><i>Rand Limit</i><br>
+			Returns a random number between 1 and the limit (inclusive).
+			<li><i>InList [AL/FL/BL/RL] Email</i><br>
+			Returns true if the specified contact is in the specified list.
+		</ul>
+		The value of a variable can also be set to a mathematical expression which is replaced with its evaluated result.<br>
+		Supported arithmetic Operators are +, -, /, ^, %
+		<li>File I/O<br>
+		<ul>
+			<li><i>Set $FilePointer=fOpen(PathOfFile, i/o/a/b/r)</i><br>
+			This function opens a file and returns the pointer to the file in variable.<br>
+			First paremeter is the file to be opened and second parameter is operation mode.<br>
+			<ul>
+				<li>i opens file in input mode.
+				<li>o opens file in output mode.
+				<li>a opens file in append mode.
+				<li>b opens file in binary mode.
+				<li>r opens file in random mode.
+			</ul>
+			<li><i>FClose $FilePointer</i><br>
+			This command closes the file opened with fOpen function.<br>
+			<li><i>fWrite $FilePointer [FilePos] Data</i><br>
+			This command is used to write to a file.<br>
+			<li><i>Set $Data=fRead(FilePointer, [FilePos], [Bytes])</i><br>
+			This function is used to read the data from a file opened with fOpen function.
+			<li><i>Set $Size=FileLen FilePointer</i><br>
+			This function returns the length of file opened with fOpen, in bytes.
+		</ul>
+		<li>If statement<br>
+		This statement executes the commands inside its structure if the condition specified in it returns TRUE.<br>
+		If structure is as follows:-<br>
+		<i>If Operand1 Operator Operand2<br>
+		&nbsp;&nbsp;&nbsp;&nbspCommands<br>
+		End If</i><br>
+		OR<br>
+		<i>If  Operand1 Operator Operand2<br>
+		&nbsp;&nbsp;&nbsp;&nbspCommands<br>
+		Else<br>
+		&nbsp;&nbsp;&nbsp;&nbspCommands<br>
+		End If</i><br>
+		The operators supported with this statement are:-<br>
+		<ul>
+			<li>=<br>
+			Compares two operands and returns true if they are equal.
+			<li><><br>
+			Compares two operands and returns true if they are unequal.
+			<li>><br>
+			Comapres two operands and returns true if first is greater than the second.
+			<li>>=<br>
+			Compares two operands and returns true if the first is greater than or equal to second.
+			<li><<br>
+			Compares two operands and returns true if the first is less than the second.
+			<li><=<br>
+			Compares two operands and returns true if the first is less than or equal to second.
+'		</ul>
+		<li>Events<br>
+		Code written under event tag is executed when the action specified in the event is occured for example code written under <i>Event MessageReceived</i> will only execute when someone sends you a message.<br>
+		There are certain variables for every event that bring extra information with the event like $Message variable in the above mentioned event will tell you the message sent to you by your buddy.<br>
+		Any code written outside an event is executed immidiately after the script is loaded.<br>
+		If the script does not contain any event, it is stopped once all the commands are executed otherwise it is held in the memory and executes unless <i>End</i> command is executed.
+		Following are the events and the parameters passed with them:-
+		<ul>
+			<li>Name: StatusChanged<br>
+			Parameter(s): $Status<br>
+			This event is raised when your status is changed and the $Status variable contains the status number<br>
+			0 = Online, 1 = Busy, 2 = Be Right Back, 3 = Away, 4 = On The Phone, 5 = Out To Lunch, 6 = Idle, 7 = Appear Offline.
+			<li>Name: NickChanged<br>
+			Parameter(s): $Nick<br>
+			This event is raised when your nick is changed and the $Nick variable containts your new nickname.
+			<li>Name: ContactStatusChanged<br>
+			Parameter(s): $Email, $Nick, $Status<br>
+			This event is raised when your contact status changes or comes online with status number in $Status variable and email of the contact in $Email variable.
+			<li>Name: ContactNickChanged<br>
+			Parameter(s): $Email, $Nick<br>
+			This event is raised when your contact changes nickname which is passed in $Nick variable.
+			<li>Name: IMWindowOpened<br>
+			Parameter(s): $Email, $Nick<br>
+			This event is raised when someone opens an IM window with you or you open an IM window with someone.<br>
+			If someone opens your window, the email and nick of the contact is passed in $Nick and $Email variables.<br>
+			If you open an IM window with someone then $EMail contains your email address and the person you open the IM window with can be retreived from (BuddyEmail) alias.
+			<li>Name: MessageReceived<br>
+			Parameter(s): $Email, $Nick, $FontName, $FontColor, $FontBold, $FontItalic, $FontStrikethru, $FontUnderline, $Message<br>
+			This event is raised when someone sends you an instant message with email, nick, message format and message is passed in the variables mentioned above.
+			<li>Name: MessageSent<br>
+			Parameter(s): $Email, $FontName, $FontColor, $FontBold, $FontItalic, $FontStrikethru, $FontUnderline, $Message<br>
+			This event is raised when you send an instant message to any of your contacts.<br>
+			$Email variable is the email of the person you've sent the message to.<br>
+			Note: MessageSent event is not raised for the messages sent under the event.
+			<li>Name: TransferRequest<br>
+			Parameter(s): $Email, $FileName, $FileSize, $RequestID<br>
+			This event is raised when you send/receive a file transfer invite.<br>
+			To accept the transfer you can use the accept gms command.
+			<li>Name: TransferAccepted<br>
+			Parameter(s): $Email, $RequestID<br>
+			This event is raised when transfer is accepted by you or your buddy.
+			<li>Name: TransferCancelled<br>
+			Parameter(s): $Email, $RequestID<br>
+			This event is raised when transfer is cancelled by you or your buddy.
+			<li>Name: TransferComplete<br>
+			Parameter(s): $RequestID<br>
+			This event is raised when file is successfully transferred.
+			<li>Name: IMWindowClosed<br>
+			Parameter(s): $Email<br>
+			This event is raised when someone leaves the conversation or you close the IM window.<br>
+			If you close it $Email will contain your email address otherwise it contains the email of the person who left the conversation.
+		</ul>
+		<li>Subrutines<br>
+		A subroutine is set of statements that performs a single task and can be used repeatedly.<br>
+		A sub code segment is written in following format:-<br><br>
+		<i>Sub NameOfSub<br>
+		'Code here<br>
+		End Sub</i><br><br>
+		You can call the sub using call function (for details see the call function).<br>
+		Look at the code below to better understand the use of subroutines.<br><br>
+		<i>Call test string1, string2<br>
+		Sub test<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;MsgBox Total arguments passed = $args<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;MsgBox First argument is $arg[1]<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;MsgBox Second argument is $arg[2]<br>
+		End Sub</i><br>
+	</ul>
+	<br>
+	<li><a name=gmrc><strong>GM Remote Control:-</strong><br>
+	This feature allows you to use your messenger/PC remotly through a CLI interface.<br>
+	To use the Remote Control you must start the server at the target GM.<br>
+	To start the server, cick on Tools>Remote Control on the GM main window.<br>
+	You must have an account on the remote server which can be created through Remote Control dialog.<br>
+	When the server is started you need to identify yourself to it using that username and password.<br>
+	First you need to send a request to GM i.e 'GM Remote Control Request'<br>
+	The server will then ask you for the username and password.<br>
+	Once you are logged in, you are then ready to send commands to the server.<br>
+	Following DOS commands are compatible without switches :-<br>
+		<ul>
+			<li><i>Dir</i><br>
+			Shows the files and directories.
+			<li><i>RmDir Directory</i><br>
+			Removes a directory.
+			<li><i>MkDir Directory</i><br>
+			Creates a new directory.
+			<li><i>Copy Source Destination</i><br>
+			Copies a file from source to destination directory.
+			<li><i>Del File</i><br>
+			Deletes a file.
+			<li><i>Ren File NewName</i><br>
+			Renames a file or directory.
+			<li><i>ChDir Directory</i><br>
+			Changes the directory.
+			<li><i>Drive:</i><br>
+			Changes the drive to the letter preceding colon.
+		</ul>
+		Other commands are :-<br>
+		<ul>
+			<li><i>Get FilePath</i><br>
+			Retrieves a file from the server.
+			<li><i>Execute File/Executable/URL [Parameters]</i><br>
+			Opens the file/Executes the program/Opens the internet shortcut.
+			<li><i>Msgr ChatWindowCommand</i><br>
+			Sends a chat window command to control the messenger.
+			<li><i>List Online</i><br>
+			Sends the list of online buddies on that messenger.
+			<li><i>List chats</i><br>
+			Sends the list of all active conversations.
+			<li><i>Execute File/Internet Address Parameters</i><br>
+			Opens/Executes the file on the server with optional paramerters.
+			<li><i>Dump File</i><br>
+			Starts putting your messages into a file. To end the file dump send a CrLf (CTRL+ENTER) and '.' in a single message.
+			<li><i>Read File</i><br>
+			Reads the contents of a file.
+			<li><i>Logout</i><br>
+			Logs you out of the server.
+			<li><i>Reboot</i><br>
+			Reboots the server PC.
+			<li><i>Shutdown</i><br>
+			Turns off the server PC.
+		</ul>
+	<br>
+	<li><strong><a name=thanks>Special Thanks:-</strong><br>
+	<ol>
+		<li>To my Mom, for letting me work on it in peace and supporting me.
+		<li>To Future Connect, for free services.
+		<li>To Maverick and Millenium_Edition, for the support.
+		<li>To all the Add-on developers on <a style=text-decoration:none href=http://www.cracksoft.net/forums>CrackSoft Forums</a>.
+	</ol>
+</ol>
+Register on <a style=text-decoration:none href=http://www.cracksoft.net/forums>CrackSoft Forums</a> for any comments, suggestions or support regarding Gilly Messenger.<br>
+<br>
+CrackSoft - 2004<br>
+Email : <a href="mailto:info@cracksoft.net">info@cracksoft.net</a><br>
+Website : <a href=http://www.cracksoft.net>www.cracksoft.net</a>
+</body>
+<html>
